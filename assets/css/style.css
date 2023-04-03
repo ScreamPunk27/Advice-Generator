@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --lightCyan:hsl(193, 38%, 86%);
+    --neonGreen:hsl(150, 100%, 66%);
+    --grayishBlue:hsl(217, 19%, 38%);
+    --darkGrayishBlue:hsl(217, 19%, 24%);
+    --darkBlue:hsl(218, 23%, 16%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 100vh;
+    background: var(--darkBlue);
+}
+
+#generator{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    padding: 1rem;
+    font-family: 'Manrope',sans-serif;
+    background-color: var(--darkGrayishBlue);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+}
+
+.bottom{
+    height: 20%;
+}
+
+#generator span:nth-child(1){
+    font-size: .7rem;
+    color: var(--neonGreen);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+#generator span:nth-child(2){
+    display: block;
+    font-size: 1.5rem;
+    color: var(--lightCyan);
+}
+
+#advice-id,#advice{
+    display: inline;
+}
+
+.container-img{
+    position: absolute;
+    bottom: -8%;
+    left: 50%;
+    transform:translateX(-50%);
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--neonGreen);
+    cursor: pointer;
+}
+
+.container-img:hover{
+    box-shadow: 0 0 10px var(--neonGreen);
+}
+
+.container-img img{
+    vertical-align: bottom;
+}
+
+
+@media screen and (min-width:600px){
+    #generator{
+        width: 600px;
+    }
+}
